@@ -31,7 +31,7 @@ init python:
 
         """
         
-        def __init__(self, text_size: int = 15, text_style: str = "default", padding: int = 10, spacing: int = 5, bg: str = "gui/rounded_dt_frame.png", text_xmax: int = 150, img_xmax: int = 150, **kwargs):
+        def __init__(self, text_size = 15, text_style = "default", padding = 10, spacing = 5, bg = "gui/rounded_dt_frame.png", text_xmax = 150, img_xmax = 150, **kwargs):
 
             super().__init__(**kwargs)
             self.titlesize = text_size
@@ -73,7 +73,7 @@ init python:
             # expect you would know how you want this formatted, if not like this.
             else:
 
-                val =  "\n".join(f"{k.title()}: {v}" for k, v in tip.__dict__.items())
+                val =  "\n".join("{}: {}".format(k.title(),v) for k, v in tip.__dict__.items())
             
             return Text(val, size = self.titlesize, style = self.text_style)
 
@@ -172,7 +172,7 @@ init python:
     # is only included for ease of use for less tech-savvy users
     config.overlay_screens.append("tooltip_display")
     if hasattr(gui, "about"):
-        gui.about += "\n\nUses {b}{a=https://github.com/HyJyncks/DynamicTooltips}Dynamic Tooltips{/a}{/b} by {color=#7414a0}Jnx{/}"
+        gui.about += "\n\nUses {b}Dynamic Tooltips{/b} by {color=#7414a0}Jnx{/}"
 
 # Instance the desired tooltip as a variable to add to a screen
 # Note that you can style multiple different instances of the tooltip to have different styles per screen!!
