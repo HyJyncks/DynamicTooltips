@@ -61,4 +61,4 @@ Then you can either add `use tooltip_display` or `add MyTooltip` to the end of y
 
 ### Terms of Use
 
-If you like it, I'd love to hear about it or see your work. If you want to credit me as `Jnx`, just leave in lines 174 and 175, it adds a little not to `gui.about`. Otherwise just comment it out.
+If you like it, I'd love to hear about it or see your work. If you want to credit me as `Jnx`, just leave in lines 174 and 175, it adds a little line to `gui.about`. Otherwise just comment it out.
