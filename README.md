@@ -1,5 +1,5 @@
 # DynamicTooltips
-Adds floating tooltips to your renpy project, allowing singular or a list of images, ints, floats, and full objects to be displayed.
+Adds floating tooltips to your renpy project, allowing singular or a list of images, ints, floats, and full objects to be displayed. This is the Python 3 version and works in Renpy 8 and above.
 
 ## How to Use:
 
