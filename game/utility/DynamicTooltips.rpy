@@ -172,7 +172,7 @@ init python:
     # is only included for ease of use for less tech-savvy users
     config.overlay_screens.append("tooltip_display")
     if hasattr(gui, "about"):
-        gui.about += "\n\nUses {b}Dynamic Tooltips{/b} by {color=#7414a0}Jnx{/}"
+        gui.about += "\n\nUses {b}{a=https://github.com/HyJyncks/DynamicTooltips}Dynamic Tooltips{/a}{/b} by {color=#7414a0}Jnx{/}"
 
 # Instance the desired tooltip as a variable to add to a screen
 # Note that you can style multiple different instances of the tooltip to have different styles per screen!!
