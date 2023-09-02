@@ -142,7 +142,7 @@ init python:
 
                 if self.raw_tip != self.old_raw:
 
-                    if type(self.raw_tip) == list:
+                    if type(self.raw_tip) == list or type(self.raw_tip) == tuple:
                         self.cur_tip = [self.tip_parse(item) for item in self.raw_tip]
 
                     else:
