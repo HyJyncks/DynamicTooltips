@@ -51,6 +51,9 @@ init python:
         def tip_parse(self, tip):
             val = ''
             # This checks the type of the tooltip
+            if type(tip).__name__ == "function":
+                tip = tip()
+
             if type(tip) == str:
 
                 # If the tip is a string, it checks if it's and image first
@@ -73,7 +76,7 @@ init python:
             # expect you would know how you want this formatted, if not like this.
             else:
 
-                val =  "\n".join("{}: {}".format(k.title(),v) for k, v in tip.__dict__.items())
+                val =  "\n".join("{}: {}".format(k.title(),v).replace("{", "{{") for k, v in tip.__dict__.items())
             
             return Text(val, size = self.titlesize, style = self.text_style)
 
