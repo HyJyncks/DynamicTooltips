@@ -24,6 +24,17 @@ screen my_button():
 
 The basic displayable is set up in a screen that is always active in game in overlay screens. If that is not what you want, all you have to do is comment out `config.overlay_screens.append("tooltip_display")` on line 173. Below that, the default usage of the tooltip is defined as `tt` so if you just want to add it to another screen, such as the main menu or navigation, at the bottom of the screen just write `add tt`!
 
+An example would be the default navigation screen (used in all the default pause and main menus) could have this:
+```py
+screen navigation():
+
+    vbox:
+        style_prefix "navigation"
+        # <..REST OF SCREEN..>
+        
+    add tt # <-- Have the tooltip as the LAST item only ONE indent in to be above all other screen elements
+```
+
 ## Creating Your Own Tooltip:
 
 If you wish for a different style of tooltip, I've made it fairly customizable. Allowing text size and style, as well as choosing a different frame, from the one I made and included. You can also set the maximum width for the tooltip as well as any images you may want to use.
