@@ -22,7 +22,7 @@ screen my_button():
             tooltip ["This tooltip also has an image!", "funny_picture.png"]
 ```
 
-The basic displayable is set up in a screen that is always active in game in overlay screens. If that is not what you want, all you have to do is comment out `config.overlay_screens.append("tooltip_display")` on line 173. Below that, the default usage of the tooltip is defined as `tt` so if you just want to add it to another screen, such as the main menu or navigation, at the bottom of the screen just write `add tt`!
+The basic displayable is set up in a screen that is always active in game in overlay screens. If that is not what you want, all you have to do is comment out `config.overlay_screens.append("tooltip_display")` on [line 173](https://github.com/HyJyncks/DynamicTooltips/blob/882951fd95f44adb299c90981bced46fa273cfd1/game/utility/DynamicTooltips.rpy#L175). Below that, the default usage of the tooltip is defined as `tt` so if you just want to add it to another screen, such as the main menu or navigation, at the bottom of the screen just write `add tt`!
 
 An example would be the default navigation screen (used in all the default pause and main menus) could have this:
 ```py
