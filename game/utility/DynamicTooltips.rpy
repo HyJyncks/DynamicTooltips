@@ -30,7 +30,7 @@ init python:
         The maximum size the image will be horizontally, scaled to fit
 
         """
-        
+        transform_event_responder = True
         def __init__(self, text_size: int = 15, text_style: str = "default", padding: int = 10, spacing: int = 5, bg: str = "gui/rounded_dt_frame.png", text_xmax: int = 150, img_xmax: int = 150, **kwargs):
 
             super().__init__(**kwargs)
