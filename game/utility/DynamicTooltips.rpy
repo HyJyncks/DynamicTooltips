@@ -76,7 +76,7 @@ init python:
             # expect you would know how you want this formatted, if not like this.
             else:
 
-                val =  "\n".join("{}: {}".format(k.title(),v).replace("{", "{{") for k, v in tip.__dict__.items())
+                val =  "\n".join("{}: {}".format(k.title(),v).replace("{", "{{").replace("[", "[[") for k, v in tip.__dict__.items())
             
             return Text(val, size = self.titlesize, style = self.text_style)
 
